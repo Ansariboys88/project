@@ -42,7 +42,7 @@ class doublelinkedlist
 			
 			while(ptr!=NULL)
 			{
-				if(ptr->key)
+				if(ptr->key==k)
 				{
 					temp=ptr;
 				}
@@ -86,7 +86,7 @@ class doublelinkedlist
 		{
 			if(nodeexists(n->key)!=NULL)
 			{
-			  cout<<"Node already exit with key vlaue "<<n->key<<" append another node withe dofferent key value"<<endl;
+			  cout<<"Node a already exit with key vlaue "<<n->key<<" append another node withe dofferent key value"<<endl;
 			  
 			}
 			else
