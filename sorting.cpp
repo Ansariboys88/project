@@ -3,15 +3,19 @@ using namespace std;
 int selection_sort(int arr[],int n)
 {
 	int i,j,temp;
-	for(i=0;i<n;i++)
-	{
+	for(i=0;i<n-1;i++)
+	{ int min=i;
 		for(j=i+1;j<n;j++)
 		{
-			if(arr[i]>arr[j])
+			if(arr[j]<arr[min])
+			{
+				min=j;
+			}
+			if(min!=i)
 			{
 				temp=arr[i];
-				arr[i]=arr[j];
-				arr[j]=temp;
+				arr[i]=arr[min];
+				arr[min]=temp;
 
 			}
 		}
